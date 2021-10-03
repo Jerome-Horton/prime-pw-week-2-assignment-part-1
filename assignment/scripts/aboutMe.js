@@ -15,7 +15,7 @@ let food = 'Liberian Food';
 let pets = 2;
 let friendsPets = 1;
 const allowedPets = 2;
-let mostPets = 5;
+let mostPets = pets + friendsPets;
 // 4 - Console log the value of `fullName`
 
 console.log( firstName );
@@ -59,8 +59,14 @@ else {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if( luckyNumber == '2' &&  adventurous == 'true' ){
+if( luckyNumber = 2 ){
   console.log( 'Roll the dice' );
+  if ( adventurous ) {
+    console.log( 'Roll the dice' );
+  } // end adventurous
+  else {
+    console.log( 'Do not roll the dice!');
+  }
 }
 
 // 15 - Write a conditional that console logs "I can have more pets!"
@@ -69,14 +75,16 @@ if( luckyNumber == '2' &&  adventurous == 'true' ){
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
 
-if( pets <= allowedPets ){
+if( pets < allowedPets ){
   console.log( 'I can have more pets' );
 }
-else if ( pets >= allowedPets) {
+
+if ( pets = allowedPets) {
   console.log( 'I have enough pets');
 }
-else {
-  console.log( 'Oh no, I have too many pets!');
+
+if ( pets > allowedPets) {
+  console.log( 'Oh no, I have too many pets!' );
 }
 
 // STRETCH GOALS:
@@ -87,11 +95,27 @@ else {
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 
-
-
-
+if ( mostPets >= pets && friendsPets <= mostPets ) {
+  console.log('mostPets');
+}
 
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
+switch ( mostPets ) {
+  case pets:
+      console.log( 'mostPets' );
+      break;
+  case friendsPets:
+      console.log( 'mostPets');
+      break;
+  case allowedPets:
+      console.log( 'LeastPets');
+      break;
+  default:
+      console.log( 'Get morePets');
+}
+
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
+adventurous ? true : false;
