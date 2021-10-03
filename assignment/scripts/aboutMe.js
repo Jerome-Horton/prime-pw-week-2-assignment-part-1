@@ -15,6 +15,7 @@ let food = 'Liberian Food';
 let pets = 2;
 let friendsPets = 1;
 const allowedPets = 2;
+let mostPets = 5;
 // 4 - Console log the value of `fullName`
 
 console.log( firstName );
@@ -26,7 +27,7 @@ console.log( food );
 console.log( pets );
 console.log( friendsPets );
 console.log( allowedPets );
-
+console.log( mostPets );
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 
 // 6 - Console log this sentence, adding in the variables you created above:
@@ -58,14 +59,8 @@ else {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if( luckyNumber == adventurous ){
-  console.log( 'Think about it' );
-}
-else if ( luckyNumber == '2' || adventurous == 'true') {
-  console.log( 'Roll the dice!');
-}
-else {
-  console.log( 'Do not roll the dice!');
+if( luckyNumber == '2' &&  adventurous == 'true' ){
+  console.log( 'Roll the dice' );
 }
 
 // 15 - Write a conditional that console logs "I can have more pets!"
@@ -77,11 +72,11 @@ else {
 if( pets <= allowedPets ){
   console.log( 'I can have more pets' );
 }
-else if ( luckyNumber == '2' || adventurous == 'true') {
-  console.log( 'Roll the dice!');
+else if ( pets >= allowedPets) {
+  console.log( 'I have enough pets');
 }
 else {
-  console.log( 'Do not roll the dice!');
+  console.log( 'Oh no, I have too many pets!');
 }
 
 // STRETCH GOALS:
@@ -91,6 +86,11 @@ else {
 // assigns the highest value to `mostPets`. There's several possibilities --
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
+
+
+
+
+
 
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
