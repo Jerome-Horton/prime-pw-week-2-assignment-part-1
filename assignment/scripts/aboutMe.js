@@ -8,7 +8,7 @@ let lastName = 'Horton';
 // (remember, you already have variables for this, can you use those?)
 // We can create a third variable and assign it the value 'fullName' or we can use the existing
 // variables of our first and last name by concatenating '+' it in a sentence.
-let fullName = 'Jerome Horton'
+let fullName = firstName + ' ' + lastName  // This is called String Concatenation //
 let luckyNumber = 8;
 let adventurous = true; // boolean
 let food = 'Liberian Food';
@@ -59,15 +59,15 @@ else {
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if( luckyNumber = 2 ){
+
+
+if( luckyNumber === 2 && luckyNumber === true ){
   console.log( 'Roll the dice' );
-  if ( adventurous ) {
-    console.log( 'Roll the dice' );
-  } // end adventurous
+  }
   else {
     console.log( 'Do not roll the dice!');
-  }
 }
+
 
 // 15 - Write a conditional that console logs "I can have more pets!"
 //if the value of `pets` is less than the value of `allowedPets`,
@@ -79,7 +79,7 @@ if( pets < allowedPets ){
   console.log( 'I can have more pets' );
 }
 
-if ( pets = allowedPets) {
+if ( pets === allowedPets) {
   console.log( 'I have enough pets');
 }
 
